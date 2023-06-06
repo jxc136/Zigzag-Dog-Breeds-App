@@ -48,18 +48,18 @@ If I was to develop this app out further, the priority actions would be:
 
 Expans test cove test coverage to ensure that critical functionality is thoroughly tested, including tests to cover error handling, user interactions and edge cases
 
-- Add unit tests for the dog API service
-- More in-depth unit tests for the homepage component functions
-- E2E testing for each of the main features
+- Add unit tests for the dog API service.
+- More in-depth unit tests for the homepage component functions.
+- E2E testing for each of the main features.
 
 #### Refactoring
 
-- Homepage: Split the homepage into components to two components to handle user interactions and display the data
-- Implement erorr handling in the service and component code
+- Homepage: Split the homepage into components to two components to handle user interactions and display the data.
+- Implement erorr handling in the service and component code.
 
 #### UI and UX
 
 - Add additional UI elements for app presentation
-- Enforce a standardised image size to ensure consistent presentation of breed cards
-- Make it easier for users to navigate between pages with a menu bar
-- Implemented UI functionality to enable all dogs from the API to be displayed, instead of 12
+- Enforce a standardised image size to ensure consistent presentation of breed cards.
+- Make it easier for users to navigate between pages with a menu bar.
+- Implemented UI functionality to enable all dogs from the API to be displayed, instead of 12.
