@@ -2,6 +2,8 @@
 
 This is a small Angular app that displays different dog breeds and allows users to view a short bio for each breed. The app retrieves the dog breeds from an external API and provides a user-friendly interface to interact with the data.
 
+Owing to time constraints, this app is a frontend only, and future iterations would build out a backend using NestJs and Express.
+
 ## Features
 
 - Fetches a list of dogs from the [Dog API](https://www.thedogapi.com/)
