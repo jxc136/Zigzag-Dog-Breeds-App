@@ -1,0 +1,48 @@
+<div class="section" id="select-breed-section">
+  <h2>Select a Single Breed</h2>
+  <div id="dog-dropdown">
+    <select (change)="handleBreedChange($event)">
+      <option value="" disabled selected>Select a breed</option>
+      <option *ngFor="let dog of doglist">{{ dog }}</option>
+    </select>
+    <button id="homepage-button" type="button" (click)="handleButtonClick()">
+      Submit
+    </button>
+  </div>
+</div>
+
+<div class="section" id="view-all-dogs-section">
+  <h2>View All Dogs</h2>
+  <button *ngIf="displayDogsClicked" (click)="viewAllDogs()">
+    View All Dogs
+  </button>
+</div>
+
+<div class="section" id="breed-card-section">
+  <ng-container *ngIf="!displayDogsClicked; else breedCard">
+    <div class="card-container">
+      <mat-card
+        *ngFor="let dog of alldogs.slice(0, 12)"
+        class="breed-card"
+        mat-elevation="2"
+        (click)="handleCardClick(dog)"
+      >
+        <mat-card-header>
+          <mat-card-title class="card-title-center">{{
+            dog.name
+          }}</mat-card-title>
+        </mat-card-header>
+
+        <div class="card-image">
+          <img src="{{ dog?.image?.url }}" alt="Photo of a Shiba Inu" />
+        </div>
+      </mat-card>
+    </div>
+  </ng-container>
+
+  <ng-template #breedCard>
+    <breed-card-component
+      [selectedBreed]="selectedBreed"
+    ></breed-card-component>
+  </ng-template>
+</div>

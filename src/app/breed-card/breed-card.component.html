@@ -1,0 +1,20 @@
+<mat-card class="breed-card" mat-elevation="2">
+  <mat-card-header>
+    <mat-card-title>{{ selectedBreed?.name }}</mat-card-title>
+    <mat-card-subtitle>{{ selectedBreed?.breed_group }}</mat-card-subtitle>
+  </mat-card-header>
+  <img
+    mat-card-image
+    src="{{ selectedBreed?.image?.url }}"
+    alt="Photo of a Shiba Inu"
+  />
+  <mat-card-content>
+    <p><strong>Weight:</strong> {{ selectedBreed?.weight?.metric }} kg</p>
+    <p><strong>Height:</strong> {{ selectedBreed?.height?.metric }} cm</p>
+    <p><strong>Life Span:</strong> {{ selectedBreed?.life_span }}</p>
+    <p>
+      <strong>Bred for:</strong>
+      {{ selectedBreed?.bred_for ? selectedBreed?.bred_for : "Not specified" }}
+    </p>
+  </mat-card-content>
+</mat-card>

@@ -1,0 +1,56 @@
+.section {
+  margin-bottom: 40px;
+}
+
+.section h2 {
+  margin-bottom: 10px;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.breed-card {
+  max-width: 400px;
+  cursor: pointer;
+}
+
+.card-image {
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-image img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.card-title-center {
+  text-align: center;
+  margin: 0;
+}
+
+.section {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#view-all-dogs-section button {
+  margin-bottom: 20px;
+}
+
+#view-all-dogs-section h2 {
+  margin-bottom: 20px;
+}
+
+.mat-mdc-card-header {
+  display: initial;
+  padding: 16px 16px 0;
+}

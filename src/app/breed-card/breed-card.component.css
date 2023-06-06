@@ -1,0 +1,10 @@
+.breed-card {
+  max-width: 400px;
+  align-self: center;
+  margin: 0 auto;
+}
+
+.mat-mdc-card-header {
+  display: initial;
+  padding: 16px 16px 0;
+}
